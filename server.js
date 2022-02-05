@@ -5,7 +5,7 @@ const app = express();
 app.use(require('body-parser').json());
 
 // register endpoints
-app.use("/api/v1/city", require("./routes/city_routes"));
+app.use("/city", require("./routes/city_routes"));
 
 app.listen(4001, () => {
     console.log('server started!');
