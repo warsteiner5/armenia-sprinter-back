@@ -3,7 +3,9 @@ const app = express();
 // Enable CORS
 var cors = require('cors')
 
-app.use(cors())
+app.use(cors({
+    origin: '*'
+}))
 // parse application/json
 app.use(require('body-parser').json());
 
