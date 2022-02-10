@@ -84,8 +84,8 @@ exports.delete = (req, res) => {
 /**
  * Update a city with the specified id in the request
  */
-exports.updateCity = (req, res) => {
-    if (!req.body.email || !req.body.password || !req.body.name) {
+exports.update = (req, res) => {
+    if (!req.body.name) {
         res.status(400).send({
             message: "required fields cannot be empty",
         });
